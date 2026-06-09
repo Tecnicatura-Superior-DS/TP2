@@ -1,0 +1,64 @@
+## CONTEXT
+
+You are an expert front-end developer specialized in building complete, production-ready websites. Your task is to autonomously generate a single-file responsive landing page using only HTML, CSS, and vanilla JavaScript — no frameworks, no external dependencies, no build steps required.
+
+## OBJECTIVE
+
+Create a complete, visually polished, and fully responsive landing page for a fictional digital services company called "NovaSpark Studio". The page must be self-contained in a single file: index.html.
+
+## OUTPUT FORMAT
+
+- Output: a single file named index.html
+- Stack: semantic HTML5 + embedded CSS (inside <style>) + optional embedded JS (inside <script>)
+- No external CSS frameworks (Bootstrap, Tailwind, etc.)
+- No external JS libraries (jQuery, React, etc.)
+- All fonts via Google Fonts @import inside <style>
+- Fully responsive: must work correctly on mobile (320px), tablet (768px), and desktop (1280px+)
+- All sections must be visible and complete — no placeholders, no "lorem ipsum"
+
+## REQUIRED SECTIONS (in this order)
+
+Implement each section with real, coherent copy for NovaSpark Studio:
+
+1. HEADER — Fixed navigation bar with the company logo (text-based) on the left and navigation links (Services, About, Testimonials, Contact) on the right. On mobile, collapse into a hamburger menu toggled by JS.
+
+2. HERO — Full-viewport-height section. Bold headline (e.g., "We build digital experiences that matter"), a one-sentence supporting tagline, and a primary CTA button labeled "Start your project" that scrolls to the contact section.
+
+3. ABOUT — Two-column layout (image placeholder on one side, text on the other). Include a short company story (3–4 sentences) and 3 key metrics displayed as large numbers with labels (e.g., "120+ Projects", "8 Years", "40+ Clients").
+
+4. SERVICES — A card grid (minimum 3 cards, ideally 4) showcasing the company's main services (e.g., Web Design, Mobile Apps, SEO, Branding). Each card must include an SVG icon, a service title, and a 2-sentence description.
+
+5. TESTIMONIALS — A visually distinct section with 3 client testimonials. Each must include: a quote, client name, company, and a star rating (rendered with ★ characters or SVG). Use a card or quote-block layout.
+
+6. CONTACT FORM — A visually complete contact form (no backend required). Fields: Full Name, Email Address, Phone (optional), Subject, Message (textarea), and a submit button labeled "Send message". Add basic HTML5 validation attributes (required, type="email", etc.).
+
+7. FOOTER — Dark background footer with: the company logo/name, a short tagline, social media icon links (LinkedIn, Twitter/X, Instagram, GitHub — use inline SVG icons), copyright notice with current year via JS, and a brief links column (Privacy Policy, Terms of Service).
+
+## DESIGN REQUIREMENTS
+
+- Color palette: deep navy (#0D1B2A) as primary dark, electric indigo (#4F46E5) as accent, clean white (#FFFFFF) and light gray (#F8FAFC) as backgrounds
+- Typography: use "Inter" for body text and "Sora" for headings (import both from Google Fonts)
+- The hero section must have a subtle animated gradient background
+- Smooth scroll behavior for all anchor links
+- Hover states on all interactive elements (buttons, nav links, cards, social icons)
+- Section transitions: alternating white and light-gray backgrounds
+- Consistent spacing: generous padding on all sections (min 80px top/bottom on desktop)
+- The submit button must have a visible :hover and :active state
+
+## CONSTRAINTS & INSTRUCTIONS FOR THE AGENT
+
+- Do NOT ask for clarification. Make all design and copy decisions autonomously.
+- Do NOT generate placeholder content. Write real, coherent copy for every section.
+- Do NOT split into multiple files. Everything goes into a single index.html.
+- Do NOT use any CSS framework or JS library.
+- Generate the COMPLETE file in one shot. Do not truncate or summarize any section.
+- After generating the file, verify it by checking: all 7 sections are present, the file has no broken HTML tags, and all CSS classes used are defined.
+
+## SUCCESS CRITERIA
+
+The output is successful if:
+✓ All 7 required sections are present and complete
+✓ The page renders correctly in a browser with no errors
+✓ The layout is fully responsive at 320px, 768px, and 1280px
+✓ No placeholder text or empty sections exist
+✓ The file is completely self-contained (single index.html)
